@@ -1,0 +1,7 @@
+## Interface: 50400
+## Title: LubosPB
+## Author: Jakub Jukl
+## Version: 1.0
+## SavedVariables: LubosPBSaved
+LubosPB.xml
+main.lua

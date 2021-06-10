@@ -1,0 +1,30 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+<Script file="main.lua"/>
+<Button name="AttButton" inherits="OptionsButtonTemplate" text="Attack">
+  <Anchors>
+    <Anchor point="CENTER">
+      <Offset x="0" y="340"/>
+    </Anchor> 
+  </Anchors>
+  <Scripts>
+	<OnLoad> self:RegisterEvent("PET_BATTLE_OPENING_START"); </OnLoad>
+   <OnEvent> Start(); </OnEvent>
+    <OnClick> 
+		LubosPBMainFunction(); 
+	</OnClick>
+  </Scripts>
+</Button>
+<Frame name="ChangePet">
+	 <Scripts>
+	<OnLoad> self:RegisterEvent("PET_BATTLE_PET_CHANGED"); </OnLoad>
+   <OnEvent> PetChanged(self, event, ...); </OnEvent>
+   </Scripts>
+</Frame>
+<Frame name="Move">
+	 <Scripts>
+	<OnLoad> self:RegisterEvent("PET_BATTLE_ACTION_SELECTED"); </OnLoad>
+   <OnEvent> ActionPerformed(); </OnEvent>
+   </Scripts>
+</Frame>
+</Ui>
