@@ -8,6 +8,8 @@ Example code is below. This Addon was made for personal use, so there is no wiki
 Everyone feel free to add whatever functions to suit your needs.
 Since there exists a more complex addon with the same functionality on 7.3.5 I won't be maintaining this project.
 
+I am very aware, that this Addon is not user friendly, but it doesn't need to be for my use.
+
 
 ```
 if GetActivePet(PLAYER) == 1 then
