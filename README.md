@@ -1,10 +1,13 @@
 # LubosPB
 Addon for writing scripts to semi-automate pet battles in WoW 5.4.8
 
-Open the gui window with command '/lubos' or '/lubospb'. You have to create your script first. 
+Open the gui window with command '/lubos' or '/lubospb'. You have to create your script first. After every loading, you have to select active script again.
+
+
 Example code is below. This Addon was made for personal use, so there is no wiki or more instructions.
 Everyone feel free to add whatever functions to suit your needs.
 Since there exists a more complex addon with the same functionality on 7.3.5 I won't be maintaining this project.
+
 
 ```
 if GetActivePet(PLAYER) == 1 then
