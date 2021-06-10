@@ -11,7 +11,7 @@ Since there exists a more complex addon with the same functionality on 7.3.5 I w
 I am very aware, that this Addon is not user friendly, but it doesn't need to be for my use.
 
 
-```
+```lua
 if GetActivePet(PLAYER) == 1 then
 			if GetPetCurrentHP(PLAYER, 1) == 0 then
 				ChangeToPet(2);
