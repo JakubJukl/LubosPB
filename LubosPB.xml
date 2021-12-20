@@ -27,4 +27,10 @@
    <OnEvent> ActionPerformed(); </OnEvent>
    </Scripts>
 </Frame>
+<Frame name="Ended">
+	 <Scripts>
+	<OnLoad> self:RegisterEvent("PET_BATTLE_OVER"); </OnLoad>
+   <OnEvent> PetBattleEnded(); </OnEvent>
+   </Scripts>
+</Frame>
 </Ui>
