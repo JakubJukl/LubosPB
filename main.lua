@@ -316,6 +316,10 @@ function CloseOpt_frame()
 	opt_frm:Hide();
 end
 
+function PetBattleEnded()
+	PlaySoundFile("Interface\\AddOns\\LubosPB\\Sound\\Victory.ogg", "Master");
+end
+
 SLASH_LubosPB1 = "/lubos"
 SLASH_LubosPB2 = "/lubospb"
 SlashCmdList["LubosPB"] = CreateGUI
